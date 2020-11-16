@@ -1,0 +1,17 @@
+.contentWrapper {
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 40% 10fr;
+    grid-gap: 30px;
+    grid-template-areas:
+  "h z";
+}
+.EditToDoReduxFormContainer{
+    grid-area: h;
+}
+.ExistElementContainer{
+    grid-area: z;
+}
