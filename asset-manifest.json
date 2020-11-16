@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/ToDoTaskWeb/static/css/main.b640c0aa.chunk.css",
+    "main.js": "/ToDoTaskWeb/static/js/main.c53f99f2.chunk.js",
+    "main.js.map": "/ToDoTaskWeb/static/js/main.c53f99f2.chunk.js.map",
+    "runtime-main.js": "/ToDoTaskWeb/static/js/runtime-main.7775a15a.js",
+    "runtime-main.js.map": "/ToDoTaskWeb/static/js/runtime-main.7775a15a.js.map",
+    "static/css/2.dc658620.chunk.css": "/ToDoTaskWeb/static/css/2.dc658620.chunk.css",
+    "static/js/2.530f7076.chunk.js": "/ToDoTaskWeb/static/js/2.530f7076.chunk.js",
+    "static/js/2.530f7076.chunk.js.map": "/ToDoTaskWeb/static/js/2.530f7076.chunk.js.map",
+    "static/js/3.d460c516.chunk.js": "/ToDoTaskWeb/static/js/3.d460c516.chunk.js",
+    "static/js/3.d460c516.chunk.js.map": "/ToDoTaskWeb/static/js/3.d460c516.chunk.js.map",
+    "index.html": "/ToDoTaskWeb/index.html",
+    "static/css/2.dc658620.chunk.css.map": "/ToDoTaskWeb/static/css/2.dc658620.chunk.css.map",
+    "static/css/main.b640c0aa.chunk.css.map": "/ToDoTaskWeb/static/css/main.b640c0aa.chunk.css.map",
+    "static/js/2.530f7076.chunk.js.LICENSE.txt": "/ToDoTaskWeb/static/js/2.530f7076.chunk.js.LICENSE.txt",
+    "static/media/react-widgets.css": "/ToDoTaskWeb/static/media/rw-widgets.e8b49908.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7775a15a.js",
+    "static/css/2.dc658620.chunk.css",
+    "static/js/2.530f7076.chunk.js",
+    "static/css/main.b640c0aa.chunk.css",
+    "static/js/main.c53f99f2.chunk.js"
+  ]
+}
