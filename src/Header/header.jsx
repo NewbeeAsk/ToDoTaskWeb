@@ -9,7 +9,7 @@ const Header = (props) => {
         <div className={s.header}>
             <div className={s.loginBlock}>
                 {props.isAuth
-                    ? <TextField id="outlined-basic" value={props.userData.first_name + " " + props.userData.last_name} variant="outlined"/>
+                    ? <TextField id="outlined-basic" value={"Name:" + props.userData.first_name + " " + props.userData.last_name} variant="outlined"/>
                     : <NavLink to={'/login'}><Button variant="contained" color="primary">Login</Button></NavLink>
                 }
             </div>
@@ -18,6 +18,10 @@ const Header = (props) => {
             </div>
             <div className={s.loginBlock}>
                 <NavLink to={'/profile'}><Button variant="contained" color="primary">Main Page</Button></NavLink>
+            </div>
+            <div className={s.loginBlock}>
+               <Button variant="contained" color="primary" onClick={() => {
+                   props.exitAC();}}>Exit</Button>
             </div>
         </div>
     );

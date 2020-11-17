@@ -1,6 +1,7 @@
 import React from "react";
 import {connect} from "react-redux";
 import Header from "./header";
+import {exitAC} from "../redux/authReducers";
 
 
 
@@ -21,6 +22,6 @@ let mapStateToProps = (state) => ({
 
 
 
-export default connect(mapStateToProps,{})(HeaderContainer);
+export default connect(mapStateToProps,{exitAC})(HeaderContainer);
 
 
