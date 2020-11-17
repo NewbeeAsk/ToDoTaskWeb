@@ -6,10 +6,6 @@ import Header from "./header";
 
 class HeaderContainer extends React.Component{
 
-   /* componentDidMount(props){
-
-        this.props.setMyProfile();
-    }*/
     render() {
         return(
             <Header {...this.props}/>
@@ -19,7 +15,8 @@ class HeaderContainer extends React.Component{
 
 let mapStateToProps = (state) => ({
     isAuth: state.auth.isAuth,
-    userId: state.auth.userId,
+    userData: state.auth.userData,
+
 })
 
 

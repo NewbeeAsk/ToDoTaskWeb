@@ -20,5 +20,6 @@
     grid-area: k;
 }
 .batchDelete{
+    padding-top: 10px;
     grid-area: m;
 }

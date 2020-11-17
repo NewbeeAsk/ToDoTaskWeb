@@ -56,7 +56,7 @@ const EditToDoReduxForm = (props) => {
 const mapStateToProps = (state) => {
     return {
         editElement: state.toDoPage.editedElement,
-        contact_id: state.auth.userId,
+        contact_id: state.auth.userData.id,
     }
 }
 const EditToDoReduxFormContainer = connect(mapStateToProps, {EditToDoPointThunk})(EditToDoReduxForm);

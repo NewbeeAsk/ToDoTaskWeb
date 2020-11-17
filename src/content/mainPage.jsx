@@ -9,7 +9,10 @@ import BatchDeleteComponent from "./Complete_uncomplete/batchDelete";
 
 class ToDo extends React.Component {
     componentDidMount() {
+        if(this.props.userId !== 0){
             this.props.getToDoListThunk(this.props.userId)
+        }
+
     }
     render() {
         return (
@@ -23,7 +26,7 @@ class ToDo extends React.Component {
     }
 }
 let mapStateToProps = (state) => ({
-    userId: state.auth.userId,
+    userId: state.auth.userData.id,
 });
 
 

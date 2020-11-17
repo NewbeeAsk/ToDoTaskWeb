@@ -3,6 +3,7 @@ import {Field, reduxForm} from "redux-form";
 import Button from "@material-ui/core/Button";
 import TextField from "@material-ui/core/TextField";
 import {requiredRieldValidator, maxLengthValidator} from "../validators/validators";
+import s from './todopost.module.css'
 
 const maxLength100 = maxLengthValidator(100);
 
@@ -26,9 +27,10 @@ const MyWork = (props) => {
     return (
         <div>
             <form onSubmit={props.handleSubmit}>
-
-                <Field validate={[requiredRieldValidator, maxLength100]} name={"newPost"} component={renderTextField}></Field>
-                <button><Button>Add new Work</Button></button>
+                <div>
+                <Field className={s.field} validate={[requiredRieldValidator, maxLength100]} name={"newPost"} component={renderTextField}></Field>
+                </div>
+                <button className={s.button}><Button>Add new Work</Button></button>
             </form>
         </div>
     )

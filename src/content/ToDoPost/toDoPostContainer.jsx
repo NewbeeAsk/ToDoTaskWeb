@@ -4,7 +4,7 @@ import WorkContainerComponent from "./toDoPost";
 
 const mapStateToProps = (state) => {
     return {
-        userId: state.auth.userId,
+        userId: state.auth.userData.id,
     }
 }
 const mapDispatchToProps = (dispatch) => {

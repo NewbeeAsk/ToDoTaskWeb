@@ -1,0 +1,13 @@
+.field{
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 100%;
+}
+.button{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.loginBlock{
+    float: left;
+    padding-left: 10px;
+}

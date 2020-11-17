@@ -3,36 +3,35 @@ import {contactsAPI} from "../API/API";
 const SET_CONTACT_DATA = 'SET_CONTACT_DATA';
 
 let initialState = {
-    userId: 1,
-    isAuth: false,
-    authentication_token: null,
+    userData: {id:0},
+    isAuth: false
 };
 
 const authReducer = (state = initialState, action) => {
 
     switch (action.type) {
         case SET_CONTACT_DATA:
-            return {...state, userId: action.userId, isAuth: true}
+            return {...state, userData: action.data, isAuth: true}
         default:
             return state;
     }
 }
-export const setContactData = (id) => ({type: SET_CONTACT_DATA, userId: id});
+export const setContactData = (data) => ({type: SET_CONTACT_DATA, data: data});
 
 //криейт сешн, получаем токен
 export const setLogIn = (email, password) => (dispatch) => {
     return contactsAPI.setContact(email, password)
         .then(response => {
             if (response.status === 201) {
-                let id = response.data.id
-                dispatch(setContactData(id))
+                let data = response.data
+                dispatch(setContactData(data))
             }
         })
 }
 
 //регистрация
-export const setRegistration = (email, password, password_confirmation) => (dispatch) => {
-    return contactsAPI.setRegistr(email, password, password_confirmation)
+export const setRegistration = (email, password, password_confirmation, first_name, last_name) => (dispatch) => {
+    return contactsAPI.setRegistr(email, password, password_confirmation, first_name, last_name)
         .then(response => {
             if (response.status === 201) {
                            }
