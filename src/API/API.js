@@ -10,8 +10,9 @@ export const contactsAPI = {
         return instanse.post(`sessions`, {email: email, password: password})
             .then(response => response);
     },
-    setRegistr(email, password, password_confirmation) {
-        return instanse.post(`registrations`, {email: email, password: password, password_confirmation: password_confirmation})
+    setRegistr(email, password, password_confirmation, first_name, last_name) {
+        return instanse.post(`registrations`, {email: email, password: password, password_confirmation: password_confirmation,
+            first_name: first_name, last_name: last_name})
             .then(response => response);
     },
     getToDoList(contact_id) {
