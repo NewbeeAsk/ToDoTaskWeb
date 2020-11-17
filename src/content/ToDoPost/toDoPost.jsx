@@ -25,7 +25,7 @@ export const renderTextField = ({
 
 const MyWork = (props) => {
     return (
-        <div>
+        <div className={s.block}>
             <form onSubmit={props.handleSubmit}>
                 <div>
                 <Field className={s.field} validate={[requiredRieldValidator, maxLength100]} name={"newPost"} component={renderTextField}></Field>

@@ -53,9 +53,11 @@ const toDoReducer = (state = initialState, action) => {
             stateCopy.complete = state.complete.filter(el => el.id !== action.data.id)
             stateCopy.uncomplete = state.uncomplete.filter(el => el.id !== action.data.id)
             if (action.data.done)
-            {stateCopy.complete.push(action.data)}
+            {action.data.batchDelete = false;
+            stateCopy.complete.push(action.data)}
             else
-            {stateCopy.uncomplete.push(action.data)}
+            {action.data.batchDelete = false;
+            stateCopy.uncomplete.push(action.data)}
             return stateCopy;
         case SET_TODOLIST:
             action.data.map(el => el.batchDelete = false)
