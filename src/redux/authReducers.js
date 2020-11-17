@@ -38,6 +38,7 @@ export const setRegistration = (email, password, password_confirmation, first_na
     return contactsAPI.setRegistr(email, password, password_confirmation, first_name, last_name)
         .then(response => {
             if (response.status === 201) {
+                alert("Registration successful");
                            }
         })
 
