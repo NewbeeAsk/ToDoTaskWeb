@@ -6,6 +6,7 @@ import {setRegistration} from "../../redux/authReducers";
 import {renderTextField} from "../ToDoPost/toDoPost";
 import Button from "@material-ui/core/Button";
 import s from './registration.module.css';
+import {requiredRieldValidator} from "../validators/validators";
 
 const RegistrationForm = ({handleSubmit}) => {
     return (
@@ -17,13 +18,13 @@ const RegistrationForm = ({handleSubmit}) => {
                 <Field placeholder={"last_name"} name={"last_name"} component={renderTextField}/>
             </div>
             <div className={s.fields}>
-                <Field placeholder={"email"} name={"email"} component={renderTextField}/>
+                <Field validate={[requiredRieldValidator]} placeholder={"email"} name={"email"} component={renderTextField}/>
             </div>
             <div className={s.fields}>
-                <Field placeholder={"Password"} name={"password"} component={renderTextField}/>
+                <Field validate={[requiredRieldValidator]} placeholder={"Password"} name={"password"} component={renderTextField}/>
             </div>
             <div className={s.fields}>
-                <Field placeholder={"Password_confirmation"} name={"password_confirmation"} component={renderTextField}/>
+                <Field validate={[requiredRieldValidator]} placeholder={"Password_confirmation"} name={"password_confirmation"} component={renderTextField}/>
             </div>
             <div className={s.fields}>
                 <button><Button placeholder={"registration"}>Registration</Button></button>
