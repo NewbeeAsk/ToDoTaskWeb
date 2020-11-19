@@ -1,7 +1,7 @@
 import * as axios from "axios";
 
 const instanse = axios.create({
-        baseURL: "https://to-do-task-server.herokuapp.com/",
+        baseURL: "http://localhost:3000/",
     }
 )
 
@@ -11,7 +11,7 @@ export const contactsAPI = {
             .then(response => response);
     },
     setRegistr(email, password, password_confirmation, first_name, last_name) {
-        return instanse.post(`registrations`, {email: email, password: password, password_confirmation: password_confirmation,
+        return instanse.post(`contacts`, {email: email, password: password, password_confirmation: password_confirmation,
             first_name: first_name, last_name: last_name})
             .then(response => response);
     },

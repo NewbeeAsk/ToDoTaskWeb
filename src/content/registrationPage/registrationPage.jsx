@@ -12,10 +12,10 @@ const RegistrationForm = ({handleSubmit}) => {
     return (
         <form className={s.form} onSubmit={handleSubmit}>
             <div className={s.fields}>
-                <Field placeholder={"first_name"} name={"first_name"} component={renderTextField}/>
+                <Field validate={[requiredRieldValidator]} placeholder={"first_name"} name={"first_name"} component={renderTextField}/>
             </div>
             <div className={s.fields}>
-                <Field placeholder={"last_name"} name={"last_name"} component={renderTextField}/>
+                <Field validate={[requiredRieldValidator]} placeholder={"last_name"} name={"last_name"} component={renderTextField}/>
             </div>
             <div className={s.fields}>
                 <Field validate={[requiredRieldValidator]} placeholder={"email"} name={"email"} component={renderTextField}/>
