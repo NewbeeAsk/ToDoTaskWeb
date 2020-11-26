@@ -1,7 +1,7 @@
 import * as axios from "axios";
 
 const instanse = axios.create({
-        baseURL: "https://to-do-task-server.herokuapp.com/",
+        baseURL: "http://localhost:3000/",
     }
 )
 

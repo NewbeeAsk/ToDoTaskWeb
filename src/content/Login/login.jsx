@@ -16,7 +16,7 @@ const LoginForm = ({handleSubmit}) => {
                 <Field validate={[requiredRieldValidator]} placeholder={"login"} name={"login"} component={renderTextField}/>
             </div>
             <div className={s.fields}>
-                <Field validate={[requiredRieldValidator]} placeholder={"Password"} name={"password"} component={renderTextField}/>
+                <Field validate={[requiredRieldValidator]} type="password" placeholder={"Password"} name={"password"} component={renderTextField}/>
             </div>
             <div className={s.fields}>
                 <button><Button placeholder={"login"}>Login</Button></button>

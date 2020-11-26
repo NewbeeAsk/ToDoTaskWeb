@@ -21,10 +21,10 @@ const RegistrationForm = ({handleSubmit}) => {
                 <Field validate={[requiredRieldValidator]} placeholder={"email"} name={"email"} component={renderTextField}/>
             </div>
             <div className={s.fields}>
-                <Field validate={[requiredRieldValidator]} placeholder={"Password"} name={"password"} component={renderTextField}/>
+                <Field validate={[requiredRieldValidator]} type="password" placeholder={"Password"} name={"password"} component={renderTextField}/>
             </div>
             <div className={s.fields}>
-                <Field validate={[requiredRieldValidator]} placeholder={"Password_confirmation"} name={"password_confirmation"} component={renderTextField}/>
+                <Field validate={[requiredRieldValidator]} type="password" placeholder={"Password_confirmation"} name={"password_confirmation"} component={renderTextField}/>
             </div>
             <div className={s.fields}>
                 <button><Button placeholder={"registration"}>Registration</Button></button>

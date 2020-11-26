@@ -17,11 +17,17 @@ const Header = (props) => {
                 <NavLink to={'/registrate'}><Button variant="contained" color="primary">Registration</Button></NavLink>
             </div>
             <div className={s.loginBlock}>
-                <NavLink to={'/profile'}><Button variant="contained" color="primary">Main Page</Button></NavLink>
+                {props.isAuth
+                    ? <NavLink to={'/profile'}><Button variant="contained" color="primary">Main Page</Button></NavLink>
+                    : <></>
+                }
             </div>
             <div className={s.loginBlock}>
-               <Button variant="contained" color="primary" onClick={() => {
-                   props.exitAC();}}>Exit</Button>
+                {props.isAuth
+                    ? <Button variant="contained" color="primary" onClick={() => {
+                        props.exitAC();}}>Exit</Button>
+                    : <></>
+                }
             </div>
         </div>
     );
