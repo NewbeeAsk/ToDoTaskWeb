@@ -24,8 +24,8 @@ const Header = (props) => {
             </div>
             <div className={s.loginBlock}>
                 {props.isAuth
-                    ? <Button variant="contained" color="primary" onClick={() => {
-                        props.exitAC();}}>Exit</Button>
+                    ? <NavLink to={'/login'}><Button variant="contained" color="primary" onClick={() => {
+                        props.exitAC();}}>Exit</Button></NavLink>
                     : <></>
                 }
             </div>
